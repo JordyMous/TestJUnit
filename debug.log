@@ -1226,19 +1226,3 @@
 [0607/201740.563:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0607/201740.744:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0607/201740.746:ERROR:crash_report_database_win.cc(469)] failed to stat report
-[0608/111729.632:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.637:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.637:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.637:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.637:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
-[0608/111729.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.646:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.646:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.646:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
-[0608/111729.646:ERROR:exception_snapshot_win.cc(98)] thread ID 40624 not found in process

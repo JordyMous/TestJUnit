@@ -38,14 +38,14 @@ public class LoginTest extends BaseTest {
 	 * @param email	String
 	 * @param pw String
 	 */
-	@ParameterizedTest
+	/*@ParameterizedTest
 	@CsvFileSource(resources = "data.csv", numLinesToSkip = 1, delimiter = ',')
 	public void LoginTest_DataDriven(String email, String pw) {
 		LoginPage loginPage = new LoginPage(getDriver());
 		loginPage.enterCredentialsWithData(email, pw);
 		loginPage.clickLogin();
 		//takeSnapShot();
-	}
+	}*/
 
 	
 	

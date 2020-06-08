@@ -1,3 +1,5 @@
-/drivers/
 /target/
+/drivers/
+/log/
+/bin/
 

@@ -24,7 +24,6 @@ public class DriverManager {
 	public DriverManager(Properties configProperties) {
 		this.configProperties = configProperties;
 		this.browser = configProperties.getProperty("browser").toLowerCase();
-		System.out.println("///////////////////////////////// " + browser);
 		/**
 		 * Run the test in a headless browser when the system doesn't support a GUI or when the user defines this in the config
 		 */
@@ -33,7 +32,9 @@ public class DriverManager {
 		}
 	}
 	
-	public void download() throws IOException {		
+	public void download() throws IOException {	
+		System.out.println("///////////////////////////////// " + browser);
+		
 		switch(browser) {
 			case "chrome":
 				File chromeDriver = new File(configProperties.getProperty("chromepath"));

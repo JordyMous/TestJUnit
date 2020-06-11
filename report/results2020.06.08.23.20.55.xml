@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<testcase>
+<name>LoginTest2()</name>
+<status>disabled</status>
+</testcase>
+<time testname="LoginTest DataDriven1 ==> [vj.brightest+1@gmail.com,123456]" seconds="8"></time>
+<time testname="LoginTest1()" seconds="10"></time>
+<time testname="LoginTest DataDriven2 ==> [vj.brightest+1@gmail.com,123456]" seconds="10"></time>
+<time testname="LoginTest3()" seconds="12"></time>
+<testcase>
+<name>LoginTest DataDriven2 ==> [vj.brightest+1@gmail.com,123456]</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/LoginTest DataDriven2 ==> [vj.brightest+1@gmail.com,123456].png</screenshot>
+</testcase>
+<testcase>
+<name>LoginTest DataDriven1 ==> [vj.brightest+1@gmail.com,123456]</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/LoginTest DataDriven1 ==> [vj.brightest+1@gmail.com,123456].png</screenshot>
+</testcase>
+<testcase>
+<name>LoginTest1()</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/LoginTest1().png</screenshot>
+</testcase>
+<testcase>
+<name>LoginTest3()</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/LoginTest3().png</screenshot>
+</testcase>
+</testsuite>

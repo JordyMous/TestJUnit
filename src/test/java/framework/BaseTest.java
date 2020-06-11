@@ -31,102 +31,27 @@ public class BaseTest {
 	private static Properties configProperties;
 	private static FileInputStream configPropertiesFile;
 	private static boolean headless;
+	
+	private static DriverManager manager;
 
 	@BeforeAll
 	public static void beforeAll() throws IOException {
-			
 		configProperties = new Properties();
 		configPropertiesFile = new FileInputStream("properties/config.properties");
 		configProperties.load(configPropertiesFile);
 		
-		String browser = configProperties.getProperty("browser");
-		
-		switch(browser.toLowerCase()) {
-			case "chrome":
-				File chromeDriver = new File(configProperties.getProperty("chromepath"));
-				if (!chromeDriver.exists() || Boolean.parseBoolean(configProperties.getProperty("forcedownload"))) {	
-					new DriverDownloader(configProperties.getProperty("chromeurl"), "drivers");
-				}
-				break;
-			case "firefox":
-				File firefoxDriver = new File(configProperties.getProperty("chromepath"));
-				if (!firefoxDriver.exists() || Boolean.parseBoolean(configProperties.getProperty("forcedownload"))) {	
-					new DriverDownloader(configProperties.getProperty("firefoxurl"), "drivers");
-				}
-				break;
-			case "edge":
-				File edgeDriver = new File(configProperties.getProperty("edgepath"));
-				if (!edgeDriver.exists() || Boolean.parseBoolean(configProperties.getProperty("forcedownload"))) {
-					new DriverDownloader(configProperties.getProperty("edgeurl"), "drivers");
-				}
-				break;
-		}
-		
-		/**
-		 * Run the test in a headless browser when the system doesn't support a GUI or when the user defines this in the config
-		 */
-		if (GraphicsEnvironment.isHeadless() || Boolean.parseBoolean(configProperties.getProperty("headless"))) {
-			headless = true;
-		}
+		manager = new DriverManager(configProperties);
+		manager.download();
 	}
 
 	@BeforeEach
 	public void beforeSuite() throws MalformedURLException, IOException {			
-		
-		String browser = configProperties.getProperty("browser").toLowerCase();
-		
-		switch(browser) {
-			case "chrome":
-				System.setProperty("webdriver.chrome.driver", configProperties.getProperty("chromepath"));
-				
-				try {				
-					if (headless) {
-						ChromeOptions chromeOptions = new ChromeOptions();
-						chromeOptions.setHeadless(true);
-						driver = new ChromeDriver(chromeOptions);
-					} else {
-						driver = new ChromeDriver();
-					}
-				} catch (SessionNotCreatedException e) {
-					e.printStackTrace();
-					new DriverKiller("chromedriver");
-				}
-				
-				break;
-			case "firefox":
-				System.setProperty("webdriver.gecko.driver", configProperties.getProperty("firefoxpath"));
-				
-				try {
-					if (headless ) {
-						FirefoxOptions firefoxOptions = new FirefoxOptions();
-						firefoxOptions.setHeadless(true);
-						driver = new FirefoxDriver(firefoxOptions);
-					} else {
-						driver = new FirefoxDriver();
-					}
-				} catch (WebDriverException e) {
-					e.printStackTrace();
-					new DriverKiller("geckodriver");
-				}
-				
-				break;
-			case "edge":
-				System.setProperty("webdriver.edge.driver", configProperties.getProperty("edgepath"));
-				
-				try {
-					driver = new EdgeDriver();
-				} catch (WebDriverException e) {
-					e.printStackTrace();
-					new DriverKiller("msedgedriver");
-				}
-				
-				break;
-		}
+		driver = manager.getDriver();
 	}
 
 	@AfterEach
 	public void afterSuite() {
-		if (null != driver) {
+		if (driver != null) {
 			driver.quit();
 		}
 	}
@@ -140,7 +65,7 @@ public class BaseTest {
 	 * Screenshot will be saved in separate folder.
 	 */
     public void takeSnapShot() {
-    	if (Boolean.parseBoolean(configProperties.getProperty("takesnapshot"))) {
+    	if (Boolean.parseBoolean(configProperties.getProperty("takesnapshot"))) {   		
             TakesScreenshot scrShot =(TakesScreenshot)driver;
             File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
             String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());

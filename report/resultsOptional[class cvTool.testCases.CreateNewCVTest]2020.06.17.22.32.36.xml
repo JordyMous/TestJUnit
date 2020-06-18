@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="Add new training to CV" seconds="3"></time>
+<time testname="Add new project to CV" seconds="4"></time>
+<testcase>
+<name>Add new project to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new project to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '185-200-100-168', ip: '185.200.100.168', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1706}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Windows\proxy\scoped_dir5524_179519243}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.61, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c5bf21dd3c936b13e26ab6f87f50e125
+Command duration or timeout: 0 milliseconds]]> </error>
+</testcase>
+<testcase>
+<name>Add new training to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new training to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"collapse-sign"}
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '185-200-100-168', ip: '185.200.100.168', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1706}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Windows\proxy\scoped_dir5524_179519243}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.61, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c5bf21dd3c936b13e26ab6f87f50e125
+*** Element info: {Using=class name, value=collapse-sign}
+Command duration or timeout: 0 milliseconds]]> </error>
+</testcase>
+<time testname="Add new technical skill to CV" seconds="10"></time>
+<testcase>
+<name>Add new technical skill to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new technical skill to CV.png</screenshot>
+</testcase>
+<time testname="Add new language to CV" seconds="13"></time>
+<testcase>
+<name>Add new language to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new language to CV.png</screenshot>
+</testcase>
+<time testname="Add new certificate to CV" seconds="12"></time>
+<testcase>
+<name>Add new certificate to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new certificate to CV.png</screenshot>
+</testcase>
+</testsuite>

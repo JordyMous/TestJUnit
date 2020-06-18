@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="Add new project to CV" seconds="17"></time>
+<testcase>
+<name>Add new project to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new project to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MOUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: da654517686c6babc3a49ec042f96f28]]> </error>
+</testcase>
+<testcase>
+<name>Add new language to CV</name>
+<status>disabled</status>
+</testcase>
+<testcase>
+<name>Add new technical skill to CV</name>
+<status>disabled</status>
+</testcase>
+<testcase>
+<name>Add new certificate to CV</name>
+<status>disabled</status>
+</testcase>
+<testcase>
+<name>Add new training to CV</name>
+<status>disabled</status>
+</testcase>
+</testsuite>

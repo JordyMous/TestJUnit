@@ -1,4 +1,4 @@
-package framework;
+package framework.tools;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -13,6 +13,11 @@ import java.util.zip.ZipInputStream;
 
 import org.apache.commons.io.FileUtils;
 
+/**
+ * Enables user to let framework download missing drivers. 
+ * When a new version of a webdriver is available, only the url needs to be adjusted. 
+ *
+ */
 public class DriverDownloader {
 	
 	private String zipName = "driver.zip";

@@ -1,5 +1,9 @@
-package framework;
+package framework.tools;
 
+/**
+ * Will shut down the driver in case of an error during creation that would otherwise keep running in the background. 
+ *
+ */
 public class DriverKiller {
 	
 	public DriverKiller(String driver) {

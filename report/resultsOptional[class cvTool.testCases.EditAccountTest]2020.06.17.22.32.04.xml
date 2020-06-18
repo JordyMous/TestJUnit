@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<testcase>
+<name>Navigate to edit account page</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Navigate to edit account page.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 842 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>Add Profile description, education and competencies</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add Profile description, education and competencies.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.79 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>Edit name, gender, location, date of birth</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Edit name, gender, location, date of birth.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.81 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+</testsuite>

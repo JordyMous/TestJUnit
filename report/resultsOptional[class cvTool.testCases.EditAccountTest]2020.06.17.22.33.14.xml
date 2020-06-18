@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="Navigate to edit account page" seconds="7"></time>
+<time testname="Edit name, gender, location, date of birth" seconds="3"></time>
+<testcase>
+<name>Edit name, gender, location, date of birth</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Edit name, gender, location, date of birth.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '185-200-103-237', ip: '185.200.103.237', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1688}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Windows\proxy\scoped_dir6824_1934811928}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.61, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 170f68ecfa1ead8e26a604c1f32d799f
+Command duration or timeout: 0 milliseconds]]> </error>
+</testcase>
+<testcase>
+<name>Navigate to edit account page</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Navigate to edit account page.png</screenshot>
+</testcase>
+<time testname="Add Profile description, education and competencies" seconds="3"></time>
+<testcase>
+<name>Add Profile description, education and competencies</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add Profile description, education and competencies.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: '185-200-103-237', ip: '185.200.103.237', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver
+Command duration or timeout: 0 milliseconds]]> </error>
+</testcase>
+</testsuite>

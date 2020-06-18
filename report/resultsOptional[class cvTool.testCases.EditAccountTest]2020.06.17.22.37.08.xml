@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="Edit name, gender, location, date of birth" seconds="18"></time>
+<testcase>
+<name>Edit name, gender, location, date of birth</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Edit name, gender, location, date of birth.png</screenshot>
+</testcase>
+<time testname="Navigate to edit account page" seconds="8"></time>
+<testcase>
+<name>Navigate to edit account page</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Navigate to edit account page.png</screenshot>
+</testcase>
+<time testname="Add Profile description, education and competencies" seconds="13"></time>
+<testcase>
+<name>Add Profile description, education and competencies</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add Profile description, education and competencies.png</screenshot>
+</testcase>
+</testsuite>

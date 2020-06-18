@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<testcase>
+<name>Add new technical skill to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new technical skill to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>Add new language to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new language to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.07 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>Add new training to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new training to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.06 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>Add new project to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new project to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.06 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>Add new certificate to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new certificate to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.75 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+</testsuite>

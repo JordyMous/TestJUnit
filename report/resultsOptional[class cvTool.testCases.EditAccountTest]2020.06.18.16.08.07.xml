@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<testcase>
+<name>Navigate to edit account page</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Navigate to edit account page.png</screenshot>
+<error> <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\MOUS\OneDrive - Brightest\Switch4_Framework\drivers\geckodriver.exe]]> </error>
+</testcase>
+<testcase>
+<name>Add Profile description, education and competencies</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add Profile description, education and competencies.png</screenshot>
+<error> <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\MOUS\OneDrive - Brightest\Switch4_Framework\drivers\geckodriver.exe]]> </error>
+</testcase>
+<testcase>
+<name>Edit name, gender, location, date of birth</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Edit name, gender, location, date of birth.png</screenshot>
+<error> <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\MOUS\OneDrive - Brightest\Switch4_Framework\drivers\geckodriver.exe]]> </error>
+</testcase>
+</testsuite>

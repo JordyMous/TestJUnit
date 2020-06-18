@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="LoginTest2 DataDriven1" seconds="4"></time>
+<testcase>
+<name>LoginTest2 DataDriven1</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-LoginTest2 DataDriven1.png</screenshot>
+</testcase>
+<time testname="LoginTest2 DataDriven2" seconds="4"></time>
+<testcase>
+<name>LoginTest2 DataDriven2</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-LoginTest2 DataDriven2.png</screenshot>
+</testcase>
+<time testname="LoginTest1" seconds="5"></time>
+<testcase>
+<name>LoginTest1</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-LoginTest1.png</screenshot>
+</testcase>
+</testsuite>

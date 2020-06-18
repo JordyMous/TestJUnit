@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="Add new project to CV" seconds="17"></time>
+<testcase>
+<name>Add new project to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new project to CV.png</screenshot>
+</testcase>
+<time testname="Add new certificate to CV" seconds="8"></time>
+<testcase>
+<name>Add new certificate to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new certificate to CV.png</screenshot>
+</testcase>
+<time testname="Add new language to CV" seconds="143"></time>
+<testcase>
+<name>Add new language to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new language to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=83.0.478.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 83.0.478.45, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:55216}, msedge: {msedgedriverVersion: 83.0.478.45 (fa71536bbfc4d8..., userDataDir: C:\Users\MOUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a1e629b66782471c4cba2c6c1eeccc13]]> </error>
+</testcase>
+<time testname="Add new training to CV" seconds="143"></time>
+<time testname="Add new technical skill to CV" seconds="143"></time>
+<testcase>
+<name>Add new training to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new training to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=83.0.478.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 83.0.478.45, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:55242}, msedge: {msedgedriverVersion: 83.0.478.45 (fa71536bbfc4d8..., userDataDir: C:\Users\MOUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fe3d562385b1c05ed1d307f2b04b855f]]> </error>
+</testcase>
+<testcase>
+<name>Add new technical skill to CV</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new technical skill to CV.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=83.0.478.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 83.0.478.45, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:55242}, msedge: {msedgedriverVersion: 83.0.478.45 (fa71536bbfc4d8..., userDataDir: C:\Users\MOUS\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fe3d562385b1c05ed1d307f2b04b855f]]> </error>
+</testcase>
+</testsuite>

@@ -14,6 +14,15 @@
   
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+   <script src= "https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+
+   <style type="text/css"> 
+        .screenshot { 
+            display: none; 
+        } 
+          
+    </style> 
 </head>
 
 <body>
@@ -82,7 +91,15 @@
                     <th class="table-active" scope="col">Name</th>
                     <th class="table-active" scope="col">Status</th>
                     <th class="table-active" scope="col">Execution Time</th>
-                    <th class="table-active" scope="col">Screenshot</th>
+                    <th class="table-active" scope="col">Screenshot
+                      <div> 
+                        <input type="checkbox" name="colorCheckbox" value="passed"> </input>
+                        <label for="passed"> &#160; Passed</label>
+                        &#160;
+                        <input type="checkbox" name="colorCheckbox" value="failed"> </input>
+                        <label for="failed"> &#160; Failed</label>
+                      </div> 
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -103,23 +120,23 @@
                     <xsl:variable name="var" select="name"/>
                   <td><xsl:value-of select="//time[@testname = $var]/@seconds"/></td>
                     <td>
-                      <div class="accordion" id="accordion2">
-                          <div class="accordion-group">
-                            <div class="accordion-heading">
-                              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseInnerOne">
-                              Open/Close Screenshots
-                              </a>
-                            </div>
-                          <div id="collapseInnerOne" class="accordion-body collapse in">
-                            <div class="accordion-inner">
+                          <!--<div class="passed screenshot">-->
+                          <div>
+                          <xsl:attribute name="class">
+                          <xsl:value-of select="status"/>
+                          <xsl:text> screenshot</xsl:text>
+                          </xsl:attribute>
+
+                            <a target="blank">
+                            <xsl:attribute name="href">
+                            <xsl:value-of select="screenshot"/>
+                            </xsl:attribute>
                               <img height="300em">
                                 <xsl:attribute name="src">
                                 <xsl:value-of select="screenshot"/>
                                 </xsl:attribute>
                               </img>
-                            </div>
-                          </div>
-                        </div>
+                            </a>
                       </div>    
                   </td>
                   </tr>
@@ -133,6 +150,20 @@
     </div>
   </div>
 
+        <!--Script to toggle screenshots based on checkbox-->
+        <script> 
+        <![CDATA[  
+            $(document).ready(function(){
+              $('input[type="checkbox"]').change(function(){
+                var inputValue = $(this).attr("value");
+                $("." + inputValue).toggle();
+              });
+            }); 
+        ]]>
+        </script> 
+
+
+        <!--Scripts used for Chart.js graphs-->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script type="text/javascript">
         <![CDATA[      

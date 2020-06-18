@@ -8,6 +8,9 @@ import framework.elements.Button;
 import framework.elements.TextInput;
 import framework.factory.ElementFactory;
 
+/**
+ * Page object containing the elements and possible interactions.
+ */
 public class LoginPage extends BasePage {
 
 	public LoginPage(WebDriver driver) {
@@ -25,22 +28,29 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"login-form\"]/footer/button")
 	private Button signInBtn;
 	
+	/**
+	 * Used to enter login credentials for existing account (Jordy Mous)
+	 */
 	public void enterCredentials() {	
 		emailFld.set("jordymous@outlook.com");	
 		passwordFld.set("ThisIsATest123");
 	}
 	
 	/**
+	 * Used to enter login credentials.
 	 * Same functionality as 'enterCredentials' but uses parameters to enter the email and password. 
 	 * Needed for the data-driven testcase.
-	 * @param email String
-	 * @param pw String
+	 * @param email = email adress as String
+	 * @param pw String = password as String
 	 */
 	public void enterCredentialsWithData(String email, String pw) {	
 		emailFld.set(email);	
 		passwordFld.set(pw);
 	}
 	
+	/**
+	 * Click login button
+	 */
 	public void clickLogin() {
 		signInBtn.click();
 	}

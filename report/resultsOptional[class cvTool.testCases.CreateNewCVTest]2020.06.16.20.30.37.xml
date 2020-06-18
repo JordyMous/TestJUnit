@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="Add new project to CV" seconds="13"></time>
+<testcase>
+<name>Add new project to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new project to CV.png</screenshot>
+</testcase>
+<time testname="Add new language to CV" seconds="7"></time>
+<testcase>
+<name>Add new language to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new language to CV.png</screenshot>
+</testcase>
+<time testname="Add new technical skill to CV" seconds="7"></time>
+<testcase>
+<name>Add new technical skill to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new technical skill to CV.png</screenshot>
+</testcase>
+<time testname="Add new certificate to CV" seconds="9"></time>
+<testcase>
+<name>Add new certificate to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new certificate to CV.png</screenshot>
+</testcase>
+<time testname="Add new training to CV" seconds="9"></time>
+<testcase>
+<name>Add new training to CV</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Add new training to CV.png</screenshot>
+</testcase>
+</testsuite>

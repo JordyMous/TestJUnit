@@ -1,89 +1,53 @@
-# Switch4 Framework with JUnit5
+# Java, JUnit and Selenium Automation Test Framework
 
-One Paragraph of project description goes here
+Basic automation test framework following action and page object models, using Selenium to interact with the web browser and JUnit as a test engine to run the tests in the framework.
 
-## Getting Started
+## Prerequisites
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* JDK should be installed
+* Maven should be installed
+* JUnit should be installed
 
-### Prerequisites
+## Configuration
 
-What things you need to install the software and how to install them
+In the map 'properties' is a 'config.properties' file. These are the valid configurations:
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
+|     Key     |  Values | Description                                                                                           |
+|:-----------:|:-------:|-------------------------------------------------------------------------------------------------------|
+| browser     |  Chrome | The browser you want to use to run the tests with                                                     |
+|             |   Edge  |                                                                                                       |
+|             | Firefox |                                                                                                       |
+| cloud       |   True  | Run the tests on any cloud testing platform using the 'username', 'accesskey' and 'gridurl' specified |
+|             |  False  |                                                                                                       |
+| Headless    |   True  | Run the test with or without GUI, currently not supported in Edge                                     |
+|             |  False  |                                                                                                       |
+| wait        |  1-...  | Default wait time (in seconds)                                                                        |
+| username    |         | Username used by any cloud testing platform                                                           |
+| accesskey   |         | Accesskey provided by any cloud testing platform                                                      |
+| gridurl     |         | Gridurl provided by any cloud testing platform                                                        |
+| chromepath  |         | Location of Chrome driver                                                                             |
+| firefoxpath |         | Location of Firefox driver                                                                            |
+| edgepath    |         | Location of Edge driver                                                                               |
+| platform    |         | Name of OS (depends on cloud testing platform)                                                        |
 
 * [Selenium](https://www.selenium.dev/) - The testing framework used
 * [JUnit](https://junit.org/junit5/) - The testing framework used to do Unit tests
 * [Maven](https://maven.apache.org/) - Dependency Management
 
-## Contributing
+## Running the tests
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Open a terminal/command prompt and navigate to the root of the tests and run ```mvn test```
+OR
+Execute the ```run.bat``` file
 
-## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Useful links
 
-## Authors
+* [JUnit5 User Guide](https://junit.org/junit5/docs/snapshot/user-guide/)
+* [Selenium Documentation](https://www.selenium.dev/documentation/en/)
+
+### Authors
 
 * **Jordy Mous** - *Developer & Tester* - [Jordy Mous](https://www.linkedin.com/in/jordy-mous-3164b1130/)
 * **Vincent Joossen** - *Developer & Tester* - [Vincent Joossen](https://www.linkedin.com/in/vincentjoossen/)
 * **Zohal Shakeri** - *Developer & Tester* - [Zohal Shakeri](https://www.linkedin.com/in/zohalshakeri/)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc

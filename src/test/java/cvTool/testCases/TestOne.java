@@ -1,49 +1,33 @@
 package cvTool.testCases;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-
 import cvTool.pageObjects.LoginPage;
 import framework.BaseTest;
 
 public class TestOne extends BaseTest {
+	
+	@Tag("Test")
+	@DisplayName("Test1.1")
 	@Test
-	public void LoginTest4() {
+	public void TestOne1(TestInfo testInfo) {
 		LoginPage loginPage = new LoginPage(getDriver());
+		getLogger().info("Opening Login page");
 		loginPage.enterCredentials();
+		getLogger().info("Entering credentials to login");
 		loginPage.clickLogin();
-		takeSnapShot();
+		getLogger().info("Click login button");
+		takeScreenshot(testInfo);
+		String url = getCurrentURL();
+		String URI = getBaseURI();
+		assertEquals(url, URI, "Unsuccessfull Login:");
+	
 	}
-	
-	/*@Test
-	public void LoginTest5() {
-		LoginPage loginPage = new LoginPage(getDriver());
-		loginPage.enterCredentials();
-		loginPage.clickLogin();
-		takeSnapShot();
-
-	}
-	
-	@Test
-	public void LoginTest6() {
-		LoginPage loginPage = new LoginPage(getDriver());
-		loginPage.enterCredentials();
-		loginPage.clickLogin();
-		takeSnapShot();
-	}*/
-	
-	/**
-	 * Testcase that is Data-driven. Data such as email and password are used from csv. 
-	 * @param email	String
-	 * @param pw String
-	 */
-	/*@ParameterizedTest
-	@CsvFileSource(resources = "data.csv", numLinesToSkip = 1, delimiter = ',')
-	public void LoginTest_DataDriven(String email, String pw) {
-		LoginPage loginPage = new LoginPage(getDriver());
-		loginPage.enterCredentialsWithData(email, pw);
-		loginPage.clickLogin();
-		//takeSnapShot();
-	}*/	
 }

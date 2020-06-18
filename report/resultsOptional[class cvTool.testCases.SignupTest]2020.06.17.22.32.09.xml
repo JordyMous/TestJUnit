@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<testcase>
+<name>SignupTest3 - Not able to create account with used email</name>
+<status>disabled</status>
+</testcase>
+<testcase>
+<name>SignupTest2 - Using special characters in email</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-SignupTest2 - Using special characters in email.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 786 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>SignupTest1 DataDriven1</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-SignupTest1 DataDriven1.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Error : Platform can be one of MAC, WIN8, XP, WINDOWS, and ANY (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 782 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+</testsuite>

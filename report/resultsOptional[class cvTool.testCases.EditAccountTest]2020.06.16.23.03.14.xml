@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<time testname="Navigate to edit account page" seconds="6"></time>
+<testcase>
+<name>Navigate to edit account page</name>
+<status>passed</status>
+<time></time>
+<screenshot>screenshots/screenshot-Navigate to edit account page.png</screenshot>
+</testcase>
+</testsuite>

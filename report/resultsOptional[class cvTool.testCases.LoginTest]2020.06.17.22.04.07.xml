@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<testsuite>
+<testcase>
+<name>LoginTest1</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-LoginTest1.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Automate testing time expired. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 928 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>LoginTest2 DataDriven1</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-LoginTest2 DataDriven1.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Automate testing time expired. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 991 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+<testcase>
+<name>LoginTest2 DataDriven2</name>
+<status>failed</status>
+<time></time>
+<screenshot>screenshots/screenshot-LoginTest2 DataDriven2.png</screenshot>
+<error> <![CDATA[org.openqa.selenium.WebDriverException: Automate testing time expired. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.01 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRMJORDY', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown]]> </error>
+</testcase>
+</testsuite>
